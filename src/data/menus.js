@@ -7,7 +7,7 @@ import {
 
 const initMenu = [
   {
-    label: "Thông tin cá nhân",
+    label: "Trang của tôi",
     path: "/user/",
     icon: faTachometer,
   },

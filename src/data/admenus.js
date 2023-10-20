@@ -7,8 +7,8 @@ import {
 
 const initadMenu = [
   {
-    label: "Thông tin cá nhân",
-    path: "/user/",
+    label: "Trang của tôi",
+    path: "/admin",
     icon: faTachometer,
   },
   {
@@ -16,18 +16,18 @@ const initadMenu = [
   },
   {
     label: "Quản lý tài khoản",
-    path: "/user/printService",
+    path: "/admin/accManage",
     icon: faCcPaypal,
   },
   {
     label: "Quản lý máy in",
-    path: "/user/printHistory",
+    path: "/admin/prManage",
     icon: faClockFour,
   },
   
   {
     label: "Quản lý tập tin",
-    path: "/user/bank",
+    path: "/admin/perFileManage",
     icon: faCcPaypal,
   },
 
@@ -36,7 +36,7 @@ const initadMenu = [
   },
   {
     label: "Lịch sử in",
-    path: "/user/info",
+    path: "/admin/adLog",
     icon: faInfo,
   },
 ];
