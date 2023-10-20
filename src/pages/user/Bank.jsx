@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Index";
 import { useOutletContext } from "react-router-dom";
 
-function NotFound() {
+function Bank() {
   const [sidebarToggle] = useOutletContext();
   return (
     <main className="h-full">
@@ -17,4 +17,4 @@ function NotFound() {
   );
 }
 
-export default NotFound;
+export default Bank;

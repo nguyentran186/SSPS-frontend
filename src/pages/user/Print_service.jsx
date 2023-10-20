@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar/Index";
 import { useOutletContext } from "react-router-dom";
 import UserTable from "./UserTable";
 
-function Table() {
+function PrService() {
   const [sidebarToggle] = useOutletContext();
 
   const [loading] = useState(false);
@@ -120,4 +120,4 @@ function Table() {
   );
 }
 
-export default Table;
+export default PrService;

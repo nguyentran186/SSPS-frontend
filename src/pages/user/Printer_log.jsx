@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Index";
 import { useOutletContext } from "react-router-dom";
 
-function Blank() {
+function PrLog() {
   const [sidebarToggle] = useOutletContext();
   return (
     <>
@@ -16,4 +16,4 @@ function Blank() {
   );
 }
 
-export default Blank;
+export default PrLog;

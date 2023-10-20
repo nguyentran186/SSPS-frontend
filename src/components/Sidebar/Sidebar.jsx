@@ -1,7 +1,6 @@
 import { faSignOut } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useRef, useState } from "react";
-import initMenus from "../../data/menus.js";
 import "./sidebar.css";
 import SidebarLogo from "./SidebarLogo.jsx";
 import MenuList from "./MenuList.jsx";
@@ -9,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 function Sidebar({ ...props }) {
   const navigate = useNavigate();
-  const [menus, setMenus] = useState(initMenus);
+  const [menus, setMenus] = useState(props.menu);
   const [scButton, setScButton] = useState(false);
 
   const handleChange = (e) => {
@@ -22,7 +21,7 @@ function Sidebar({ ...props }) {
       );
     } else {
       setScButton(false);
-      setMenus(initMenus);
+      setMenus(props.menu);
     }
   };
 

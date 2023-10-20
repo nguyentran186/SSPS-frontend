@@ -5,9 +5,7 @@ import { sidebarToggle } from "./../../utils/toggler.js";
 import BottomNavbar from "../BottomNavbar/Index";
 import { UserContext } from "../../context/userContext";
 
-function AuthLayout({}) {
-  // const { user } = useContext(UserContext);
-  // console.log(user);
+function AuthLayout({...props}) {
   const isDesktop = () => document.body.clientWidth > 768;
   const [sidebarStatus, setSidebarStatus] = useState("");
 
@@ -22,7 +20,7 @@ function AuthLayout({}) {
     <div className="adminLayout">
       {/* Sidebar */}
       <Sidebar
-        // user={user}
+        menu = {props.menu}
         toggle={sidebarToggle}
         className={sidebarStatus ? "" : "mobile"}
       />
