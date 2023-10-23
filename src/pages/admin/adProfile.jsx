@@ -1,9 +1,9 @@
 import React from 'react'
 
-function adProfile() {
+function AdProfile() {
   return (
-    <div>adProfile</div>
+    <div>AdProfile</div>
   )
 }
 
-export default adProfile
+export default AdProfile

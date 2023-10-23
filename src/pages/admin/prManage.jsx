@@ -1,9 +1,9 @@
 import React from 'react'
 
-function prManage() {
+function PrManage() {
   return (
-    <div>prManage</div>
+    <div>PrManage</div>
   )
 }
 
-export default prManage
+export default PrManage

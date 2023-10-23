@@ -1,9 +1,9 @@
 import React from 'react'
 
-function perFileManage() {
+function PerFileManage() {
   return (
-    <div>perFileManage</div>
+    <div>PerFileManage</div>
   )
 }
 
-export default perFileManage
+export default PerFileManage

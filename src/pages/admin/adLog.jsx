@@ -1,9 +1,9 @@
 import React from 'react'
 
-function adLog() {
+function AddLog() {
   return (
-    <div>adLog</div>
+    <div>Add</div>
   )
 }
 
-export default adLog
+export default AddLog
