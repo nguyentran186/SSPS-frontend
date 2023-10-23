@@ -4,8 +4,10 @@ import Datatables from "../../components/Datatables/Table";
 import TableCell from "../../components/Datatables/TableCell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faRemove } from "@fortawesome/free-solid-svg-icons";
+import ModifyModal from "../../components/Modal/ModifyModal";
+import RemoveModal from "../../components/Modal/RemoveModal";
 
-function UserTable({ loading, dataHeader, data, handleDelete }) {
+function AdminTable({ loading, dataHeader, data, handleDelete }) {
   return (
     <Datatables loading={loading} dataHeader={dataHeader}>
       {data?.map((row, index) => (
@@ -13,7 +15,7 @@ function UserTable({ loading, dataHeader, data, handleDelete }) {
           key={index}
           className="bg-white border md:border-b block md:table-row rounded-md shadow-md md:rounded-none md:shadow-none mb-5"
         >
-          <TableCell dataLabel="Stu_id" showLabel={true}>
+          <TableCell dataLabel="Number" showLabel={true}>
             <span className="font-medium text-sm text-gray-900">
               {row.stu_id}
             </span>
@@ -22,7 +24,7 @@ function UserTable({ loading, dataHeader, data, handleDelete }) {
             <p className="font-normal text-sm text-gray-500">{row.email}</p>
           </TableCell>
           <TableCell dataLabel="Email" showLabel={true}>
-            <p className="font-normal text-sm text-gray-500">{row.username}</p>
+            <p className="font-normal text-sm text-gray-500">{row.name}</p>
           </TableCell>
           <TableCell dataLabel="Role" showLabel={true}>
             <span className=" space-x-1">
@@ -37,22 +39,8 @@ function UserTable({ loading, dataHeader, data, handleDelete }) {
             </span>
           </TableCell>
           <TableCell>
-            <Link
-              to={`/auth/master/user/${row.id}/edit`}
-              className={`text-sky-700 inline-flex py-2 px-2 rounded  text-sm`}
-            >
-              <FontAwesomeIcon icon={faPencil} />
-            </Link>
-            <Link
-              onClick={(e) => {
-                e.preventDefault();
-                handleDelete(row.id);
-              }}
-              to={`/auth/master/user/${row.id}/edit`}
-              className={`text-red-700 inline-flex py-2 px-2 rounded  text-sm`}
-            >
-              <FontAwesomeIcon icon={faRemove} />
-            </Link>
+            <ModifyModal name={row.name} email={row.email} stu_id={row.stu_id}/>
+            <RemoveModal/>
           </TableCell>
         </tr>
       ))}
@@ -60,4 +48,4 @@ function UserTable({ loading, dataHeader, data, handleDelete }) {
   );
 }
 
-export default UserTable;
+export default AdminTable;

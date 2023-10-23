@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Index";
 import { useOutletContext } from "react-router-dom";
-import UserTable from "../user/UserTable"
+import AdminTable from "./AminTable";
 
 function AccManage() {
   const [sidebarToggle] = useOutletContext();
@@ -9,93 +9,34 @@ function AccManage() {
 
   const dataHeader = [
     {
-      key: "name",
-      label: "Name",
+      key: "stu_id",
+      label: "MSSV",
     },
     {
       key: "email",
       label: "Email",
     },
     {
-      key: "username",
-      label: "Username",
+      key: "name",
+      label: "Tên",
     },
     {
       key: "role",
-      label: "Role",
+      label: "Phân quyền",
     },
     {
       key: "action",
-      label: "Aksi",
+      label: "Chỉnh sửa",
     },
   ];
 
   const handleDelete = () => {};
   const data = [
     {
-      id: 1,
-      name: "Indah Sari Devi",
+      stu_id: 2153637,
       email: "mamahdedeh34@gmail.com",
-      username: "indahsdev01",
-      roles: [{ name: "Admin" }, { name: "Writer" }],
-    },
-    {
-      id: 2,
-      name: "Mahindra Putra",
-      email: "maheend@gmail.com",
-      username: "maheeend01",
-      roles: [{ name: "Editor" }],
-    },
-    {
-      id: 3,
-      name: "Ujang Ilman",
-      email: "ujangil03@gmail.com",
-      username: "uujang44",
-      roles: [{ name: "Writer" }],
-    },
-
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
-    },
-    {
-      id: 1,
       name: "Indah Sari Devi",
-      email: "mamahdedeh34@gmail.com",
-      username: "indahsdev01",
-      roles: [{ name: "Admin" }, { name: "Writer" }],
-    },
-    {
-      id: 2,
-      name: "Mahindra Putra",
-      email: "maheend@gmail.com",
-      username: "maheeend01",
-      roles: [{ name: "Editor" }],
-    },
-    {
-      id: 3,
-      name: "Ujang Ilman",
-      email: "ujangil03@gmail.com",
-      username: "uujang44",
-      roles: [{ name: "Writer" }],
-    },
-
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
-    },
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
+      roles: [{ name: "User" }],
     },
   ];
   return (
@@ -106,7 +47,7 @@ function AccManage() {
         {/* Main Content */}
         <div className="mainCard">
           <div className="border w-full border-gray-200 bg-white py-4 px-6 rounded-md">
-            <UserTable
+            <AdminTable
               loading={loading}
               dataHeader={dataHeader}
               data={data}
