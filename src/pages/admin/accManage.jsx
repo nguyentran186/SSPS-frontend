@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Index";
 import { useOutletContext } from "react-router-dom";
 import AdminTable from "./AminTable";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import AddModal from "../../components/Modal/AddModal";
 
 function AccManage() {
   const [sidebarToggle] = useOutletContext();
@@ -30,7 +33,7 @@ function AccManage() {
     },
   ];
 
-  const handleDelete = () => {};
+  const handleDelete = () => { };
   const data = [
     {
       stu_id: 2153637,
@@ -82,6 +85,7 @@ function AccManage() {
 
         {/* Main Content */}
         <div className="mainCard">
+          <AddModal/>
           <div className="border w-full border-gray-200 bg-white py-4 px-6 rounded-md">
             <AdminTable
               loading={loading}
