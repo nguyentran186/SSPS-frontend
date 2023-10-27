@@ -38,9 +38,6 @@ function MinhTable({ loading, dataHeader, data, handleDelete }) {
           <TableCell dataLabel="Email" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.room}</p>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
-            <p className="font-normal text-sm text-gray-500">{row.status}</p>
-          </TableCell>
           <TableCell dataLabel="Role" showLabel={true}>
             <span className=" space-x-1">
               {row.roles?.map((role, index) => (

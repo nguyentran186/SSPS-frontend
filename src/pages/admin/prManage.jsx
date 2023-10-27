@@ -39,12 +39,8 @@ function PrManage() {
       label: "Phòng",
     },
     {
-      key: "status",
-      label: "Tình trạng",
-    },
-    {
       key: "role",
-      label: "Phân quyền",
+      label: "Tình trạng",
     },
     {
       key: "action",
@@ -62,8 +58,7 @@ function PrManage() {
       base: "1",
       building: "A4",
       room: "402",
-      status: "Đang hoạt động",
-      roles: [{ name: "User" }],
+      roles: [{ name: "Đang hoạt động" }],
     },
     {
       printer_id: 1000002,
@@ -73,8 +68,7 @@ function PrManage() {
       base: "1",
       building: "A4",
       room: "402",
-      status: "Đang hoạt động",
-      roles: [{ name: "User" }],
+      roles: [{ name: "Đang hoạt động" }],
     },
     {
       printer_id: 1000003,
@@ -84,8 +78,7 @@ function PrManage() {
       base: "1",
       building: "A4",
       room: "402",
-      status: "Đang hoạt động",
-      roles: [{ name: "User" }],
+      roles: [{ name: "Đã tắt" }],
     },
     {
       printer_id: 1000004,
@@ -95,8 +88,7 @@ function PrManage() {
       base: "1",
       building: "A4",
       room: "402",
-      status: "Đang hoạt động",
-      roles: [{ name: "User" }],
+      roles: [{ name: "Đang hoạt động" }],
     },
   ];
   return (
