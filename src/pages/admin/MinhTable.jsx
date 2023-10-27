@@ -51,7 +51,7 @@ function MinhTable({ loading, dataHeader, data, handleDelete }) {
             </span>
           </TableCell>
           <TableCell>
-            <ModifyMinh name={row.name} email={row.email} stu_id={row.stu_id}/>
+            <ModifyMinh printer_id={row.printer_id} brand={row.brand} model={row.model} description={row.description} base={row.base} building={row.building} room={row.room} status={row.status}/>
             <RemoveMinh/>
           </TableCell>
         </tr>
