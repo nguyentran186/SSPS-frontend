@@ -5,6 +5,7 @@ import TableCell from "../../components/Datatables/TableCell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil, faRemove } from "@fortawesome/free-solid-svg-icons";
 import ModifyMinh from "../../components/Modal/ModifyMinh";
+import EnDisable from "../../components/Modal/EnDisable";
 import RemoveMinh from "../../components/Modal/RemoveMinh";
 
 function MinhTable({ loading, dataHeader, data, handleDelete }) {
@@ -51,7 +52,8 @@ function MinhTable({ loading, dataHeader, data, handleDelete }) {
             </span>
           </TableCell>
           <TableCell>
-            <ModifyMinh printer_id={row.printer_id} brand={row.brand} model={row.model} description={row.description} base={row.base} building={row.building} room={row.room} status={row.status}/>
+            <ModifyMinh printer_id={row.printer_id} brand={row.brand} model={row.model} description={row.description} base={row.base} building={row.building} room={row.room}/>
+            <EnDisable status={row.status}/>
             <RemoveMinh/>
           </TableCell>
         </tr>

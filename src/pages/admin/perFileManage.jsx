@@ -8,7 +8,7 @@ function PerFileManage() {
   const [sidebarToggle] = useOutletContext();
   const data = {
     file_ext: ".doc, .docx, .jpeg, .jpg, .pdf, .png, .ppt, .pptx, .xls, .xlsx",
-    max_size: "1GB",
+    max_size: "500MB",
     max_file: "30"
   }
   return (
