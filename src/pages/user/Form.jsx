@@ -35,7 +35,6 @@ function Form() {
                 <label htmlFor="largeInput" className="text-sm text-gray-600">
                   Mã số sinh viên
                 </label>
-                <FontAwesomeIcon icon={faIdCard} className="inline-flex items-center justify-center pl-2" />
                 <input
                   id="largeInput"
                   type="text"
@@ -51,7 +50,6 @@ function Form() {
                 <label htmlFor="largeInput" className="text-sm text-gray-600">
                   Email
                 </label>
-                <FontAwesomeIcon icon={faEnvelope} className="inline-flex items-center justify-center pl-2" />
                 <input
                   id="largeInput"
                   type="text"
@@ -67,7 +65,6 @@ function Form() {
                 <label htmlFor="largeInput" className="text-sm text-gray-600">
                   Tên
                 </label>
-                <FontAwesomeIcon icon={faSignature} className="inline-flex items-center justify-center pl-2" />
                 <input
                   id="largeInput"
                   type="text"
