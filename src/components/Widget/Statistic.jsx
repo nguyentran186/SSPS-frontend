@@ -7,17 +7,12 @@ Chart.register();
 
 function Statistic({ ...props }) {
   const data = {
-    labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli"],
+    labels: ["8/2022", "9/2022", "10/2022", "11/2022", "12/2022", "1/2023", "2/2023", "3/2023", "4/2023", "5/2023", "6/2023", "7/2023", "8/2023", "9/2023", "10/2023", "11/2023", "12/2023"],
     datasets: [
       {
-        label: "2023",
-        data: ["12", "22", "90", "150", "145", "120", "190"],
-      },
-      {
-        label: "Target",
-        data: ["11", "20", "89", "149", "150"],
-        type: "line",
-      },
+        label: "Số lần đăng nhập",
+        data: new Array(17).fill(0).map(() => Math.floor(Math.random() * 100)),
+      }
     ],
   };
 
@@ -28,7 +23,6 @@ function Statistic({ ...props }) {
   };
   return (
     <div className={`widgetCard p-3 md:py-4 md:px-6 ${props.className}`}>
-      <h1 className="text-medium font-semibold pb-4">Income Statement</h1>
       <div className="">
         <Bar data={data} options={options} />
       </div>
