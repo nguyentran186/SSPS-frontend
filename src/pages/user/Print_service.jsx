@@ -1,123 +1,64 @@
-import React, { useState } from "react";
-import Navbar from "../../components/Navbar/Index";
+import React, { useContext,useState, useRef } from "react";
+import StatisticWidget from "../../components/Widget/Statistic.jsx";
+import AchievementWidget from "../../components/Widget/Achievment.jsx";
+import DashboardHeader from "../../components/Other/DashboardHeader.jsx";
+import ScrolledCard from "../../components/Widget/ScrolledCard.jsx";
 import { useOutletContext } from "react-router-dom";
-import UserTable from "./UserTable";
+import { UserContext } from "../../context/userContext.js";
+import axios from '../../api/axios.js'
 
-function PrService() {
+import printIcon from "../../assets/images/printicon.svg";
+
+
+function Print_service({ ...props }) {
+  // const user = useContext(UserContext);
+  // console.log(user);
+
+  const fileInput = useRef(null);
+
+  const handleButtonClick = (e) => {
+    // trigger the file input click event
+    fileInput.current.click();
+  };
+
+  const avatar = ""
+    // user.user.img_source;
+
   const [sidebarToggle] = useOutletContext();
 
-  const [loading] = useState(false);
-
-  const dataHeader = [
-    {
-      key: "name",
-      label: "Name",
-    },
-    {
-      key: "email",
-      label: "Email",
-    },
-    {
-      key: "username",
-      label: "Username",
-    },
-    {
-      key: "role",
-      label: "Role",
-    },
-    {
-      key: "action",
-      label: "Aksi",
-    },
-  ];
-
-  const handleDelete = () => {};
-  const data = [
-    {
-      id: 1,
-      name: "Indah Sari Devi",
-      email: "mamahdedeh34@gmail.com",
-      username: "indahsdev01",
-      roles: [{ name: "Admin" }, { name: "Writer" }],
-    },
-    {
-      id: 2,
-      name: "Mahindra Putra",
-      email: "maheend@gmail.com",
-      username: "maheeend01",
-      roles: [{ name: "Editor" }],
-    },
-    {
-      id: 3,
-      name: "Ujang Ilman",
-      email: "ujangil03@gmail.com",
-      username: "uujang44",
-      roles: [{ name: "Writer" }],
-    },
-
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
-    },
-    {
-      id: 1,
-      name: "Indah Sari Devi",
-      email: "mamahdedeh34@gmail.com",
-      username: "indahsdev01",
-      roles: [{ name: "Admin" }, { name: "Writer" }],
-    },
-    {
-      id: 2,
-      name: "Mahindra Putra",
-      email: "maheend@gmail.com",
-      username: "maheeend01",
-      roles: [{ name: "Editor" }],
-    },
-    {
-      id: 3,
-      name: "Ujang Ilman",
-      email: "ujangil03@gmail.com",
-      username: "uujang44",
-      roles: [{ name: "Writer" }],
-    },
-
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
-    },
-    {
-      id: 4,
-      name: "Hadi Pradhana",
-      email: "hapra09@gmail.com",
-      username: "hapra09",
-      roles: [{ name: "Writer" }],
-    },
-  ];
   return (
     <>
-      <main className="h-full">
-        <Navbar toggle={sidebarToggle} />
+      <main className="h-full overflow-hidden">
+        {/* Welcome Header */}
+        <DashboardHeader
+          toggle={sidebarToggle}
+          avatar={avatar}
+          user={{ name: "Thạnh" }}
+          // user={{ name: user.user.name }}
+        />
 
-        {/* Main Content */}
-        <div className="mainCard">
-          <div className="border w-full border-gray-200 bg-white py-4 px-6 rounded-md">
-            <UserTable
-              loading={loading}
-              dataHeader={dataHeader}
-              data={data}
-              handleDelete={handleDelete}
-            />
+        {/* Laba */}
+        <div className="px-2 mx-auto mainCard h-full overflow-hidden">
+          <div className="w-full text-slate-700 md:grid gap-4 grid md:grid-cols-6 h-full overflow-hidden">
+          <div className="h-2/3 rounded-lg md:col-start-1 md:col-span-4 flex flex-col items-center justify-center overflow-hidden bg-green-200">
+            <img src={printIcon} alt="Description of the image" className="mb-4" />
+            <button onClick={handleButtonClick} className="bg-emerald-400 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded">
+              Chọn các tệp
+            </button>
+            <input type="file" ref={fileInput} style={{ display: 'none' }} />
+          </div>
+
+            <div className="md:col-start-5 md:col-span-2 h-full overflow-hidden">
+              <AchievementWidget />
+            </div>
           </div>
         </div>
+
+        {/* OS Kredit */}
+        
       </main>
     </>
   );
 }
 
-export default PrService;
+export default Print_service;
