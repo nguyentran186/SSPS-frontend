@@ -37,7 +37,7 @@ function AdLog() {
     },
     {
       key: "edit",
-      label: "Chỉnh sửa",
+      label: "Xóa",
     },
   ];
   const handleDelete = () => { };

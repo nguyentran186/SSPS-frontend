@@ -7,9 +7,9 @@ import { faEnvelope, faFloppyDisk, faIdCard, faPhone, faSignature } from "@forta
 function Form() {
   const [sidebarToggle] = useOutletContext();
   const data = {
-    stu_id: 2153637,
-    email: "user1@hcmut.edu.vn",
-    name: "Linh",
+    stu_id: 2152289,
+    email: "thanh.phamhuynh2806@hcmut.edu.vn",
+    name: "Phạm Huỳnh Quốc Thạnh",
 
   }
   return (

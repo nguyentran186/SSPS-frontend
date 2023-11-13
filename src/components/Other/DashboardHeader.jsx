@@ -20,7 +20,7 @@ function DashboardHeader({ user, avatar, toggle }) {
           />
         </p>
         <div id="nameSection">
-          <p className="text-sm font-semibold text-gray-500">Welcome back,</p>
+          <p className="text-sm font-semibold text-gray-500">Chào mừng bạn đã trở lại,</p>
           <h1 className="font-medium lg:text-3xl text-2xl text-gray-700">
             {user?.name}
           </h1>
@@ -32,10 +32,10 @@ function DashboardHeader({ user, avatar, toggle }) {
             <FontAwesomeIcon icon={faCog}></FontAwesomeIcon>
           </Link>
           <Link to="/user">
-            <FontAwesomeIcon icon={faBell}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
           </Link>
           <Link to="/user">
-            <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
+            <FontAwesomeIcon icon={faBell}></FontAwesomeIcon>
           </Link>
         </div>
         <p className="rounded-full hidden md:block border border-emerald-400 p-[3px] shadow-lg">

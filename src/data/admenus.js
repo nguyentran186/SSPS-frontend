@@ -1,15 +1,16 @@
-import { faCcPaypal } from "@fortawesome/free-brands-svg-icons";
 import {
-  faTachometer,
-  faInfo,
-  faClockFour
+  faHouseUser,
+  faFileLines,
+  faClockFour,
+  faUsers,
+  faPrint
 } from "@fortawesome/free-solid-svg-icons";
 
 const initadMenu = [
   {
     label: "Trang của tôi",
     path: "/admin",
-    icon: faTachometer,
+    icon: faHouseUser,
   },
   {
     label: 'Quản lý'
@@ -17,18 +18,18 @@ const initadMenu = [
   {
     label: "Quản lý tài khoản",
     path: "/admin/accManage",
-    icon: faCcPaypal,
+    icon: faUsers,
   },
   {
     label: "Quản lý máy in",
     path: "/admin/prManage",
-    icon: faClockFour,
+    icon: faPrint,
   },
   
   {
     label: "Quản lý tập tin",
     path: "/admin/perFileManage",
-    icon: faCcPaypal,
+    icon: faFileLines
   },
 
   {
@@ -37,7 +38,7 @@ const initadMenu = [
   {
     label: "Lịch sử in",
     path: "/admin/adLog",
-    icon: faInfo,
+    icon: faClockFour,
   },
 ];
 

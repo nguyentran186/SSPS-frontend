@@ -1,7 +1,7 @@
 import React, { useContext,useState, useRef } from "react";
+import Navbar from "../../components/Navbar/Index";
 import StatisticWidget from "../../components/Widget/Statistic.jsx";
 import AchievementWidget from "../../components/Widget/Achievment.jsx";
-import DashboardHeader from "../../components/Other/DashboardHeader.jsx";
 import ScrolledCard from "../../components/Widget/ScrolledCard.jsx";
 import { useOutletContext } from "react-router-dom";
 import { UserContext } from "../../context/userContext.js";
@@ -28,14 +28,8 @@ function Print_service({ ...props }) {
 
   return (
     <>
-      <main className="h-full overflow-hidden">
-        {/* Welcome Header */}
-        <DashboardHeader
-          toggle={sidebarToggle}
-          avatar={avatar}
-          user={{ name: "Thạnh" }}
-          // user={{ name: user.user.name }}
-        />
+      <main className="h-full">
+      <Navbar toggle={sidebarToggle} />  
 
         {/* Laba */}
         <div className="px-2 mx-auto mainCard h-full overflow-hidden">

@@ -1,15 +1,16 @@
-import { faCcPaypal } from "@fortawesome/free-brands-svg-icons";
 import {
-  faTachometer,
+  faHouseUser,
+  faPrint,
   faInfo,
-  faClockFour
+  faClockFour,
+  faCreditCard
 } from "@fortawesome/free-solid-svg-icons";
 
 const initMenu = [
   {
     label: "Trang của tôi",
     path: "/user/",
-    icon: faTachometer,
+    icon: faHouseUser,
   },
   {
     label: 'Dịch vụ in'
@@ -17,7 +18,7 @@ const initMenu = [
   {
     label: "In tập tin",
     path: "/user/printService",
-    icon: faCcPaypal,
+    icon: faPrint,
   },
   {
     label: "Lịch sử in",
@@ -31,16 +32,12 @@ const initMenu = [
   {
     label: "Liên kết ngân hàng",
     path: "/user/bank",
-    icon: faCcPaypal,
+    icon: faCreditCard,
   },
   {
     label: "Chỉnh sửa thông tin",
     path: "/user/info",
     icon: faInfo,
-  },
-
-  {
-    label: 'Khác'
   },
 ];
 

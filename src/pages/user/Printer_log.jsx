@@ -9,19 +9,39 @@ function PrLog() {
   const dataHeader = [
     {
       key: "id",
-      label: "Order",
+      label: "STT",
+    },
+    {
+      key: "print_id",
+      label: "Mã số máy in",
     },
     {
       key: "file_name",
       label: "Tên file",
     },
     {
-      key: "time",
-      label: "Thời gian",
+      key: "date",
+      label: "Ngày in",
+    },
+    {
+      key: "start_time",
+      label: "Thời gian bắt đầu",
+    },
+    {
+      key: "end_time",
+      label: "Thời gian kết thúc",
     },
     {
       key: "size",
       label: "Kích thước",
+    },
+    {
+      key: "paper",
+      label: "Khổ giấy",
+    },
+    {
+      key: "page",
+      label: "Số trang",
     },
     {
       key: "quantity",
@@ -36,52 +56,63 @@ function PrLog() {
   const data = [
     {
       id: 1,
-      file_name: "A",
-      time: "29/10/2023",
-      size: "100MB",
-      quantity: 1,
+      print_id: "A04F301",
+      file_name: "presentation.pdf",
+      date: "15/10/2023",
+      start_time: "11:30 AM",
+      end_time: "11:32 AM",
+      size: "366KB",
+      paper: "A3",
+      page: 2,
+      quantity: 1
     },
     {
       id: 2,
-      file_name: "B",
-      time: "27/10/2023",
-      size: "82MB",
-      quantity: 5,
+      print_id: "B10F201",
+      file_name: "CC01.xlsx",
+      date: "16/10/2023",
+      start_time: "01:28 PM",
+      end_time: "01:28 PM",
+      size: "13KB",
+      paper: "A4",
+      page: 1,
+      quantity: 2
     },
     {
       id: 3,
-      file_name: "C",
-      time: "19/9/2023",
-      size: "1GB",
-      quantity: 2,
+      print_id: "B04F502",
+      file_name: "review.docx",
+      date: "20/10/2023",
+      start_time: "07:20:AM",
+      end_time: "07:20 AM",
+      size: "640KB",
+      paper: "A4",
+      page: 28,
+      quantity: 1
     },
     {
       id: 4,
-      file_name: "D",
-      time: "5/8/2023",
-      size: "1,2GB",
-      quantity: 10,
+      print_id: "B04F502",
+      file_name: "Report_SE_231.docx",
+      date: "20/10/2023",
+      start_time: "07:20 AM",
+      end_time: "07:21 AM",
+      size: "680KB",
+      paper: "A4",
+      page: 22,
+      quantity: 1
     },
     {
       id: 5,
-      file_name: "E",
-      time: "22/12/2022",
-      size: "5MB",
-      quantity: 9,
-    },
-    {
-      id: 6,
-      file_name: "F",
-      time: "07/01/2020",
-      size: "55KB",
-      quantity: 123,
-    },
-    {
-      id: 7,
-      file_name: "G",
-      time: "28/07/2003",
-      size: "88MB",
-      quantity: 22,
+      print_id: "B01F201",
+      file_name: "Chapter6.pdf",
+      date: "21/10/2023",
+      start_time: "03:46 PM",
+      end_time: "03:50 PM",
+      size: "2.180KB",
+      paper: "A4",
+      page: 40,
+      quantity: 1
     },
   ];
   return (
