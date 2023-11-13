@@ -11,11 +11,11 @@ function PrManage() {
 
   const dataHeader = [
     {
-      key: "stu_id",
+      key: "print_id",
       label: "Mã số máy in",
     },
     {
-      key: "email",
+      key: "brand",
       label: "Nhãn hiệu",
     },
     {
