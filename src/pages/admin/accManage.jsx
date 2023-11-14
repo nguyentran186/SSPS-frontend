@@ -16,12 +16,12 @@ function AccManage() {
       label: "MSSV",
     },
     {
-      key: "email",
-      label: "Email",
+      key: "name",
+      label: "Họ và tên",
     },
     {
-      key: "name",
-      label: "Tên",
+      key: "email",
+      label: "Email",
     },
     {
       key: "role",
@@ -36,45 +36,45 @@ function AccManage() {
   const handleDelete = () => { };
   const data = [
     {
-      stu_id: 2153637,
-      email: "mamahdedeh34@gmail.com",
-      name: "Indah Sari Devi",
+      stu_id: 2152126,
+      email: "khai.trinhxuan@hcmut.edu.vn",
+      name: "Trịnh Xuân Khải",
+      roles: [{ name: "User" }],
+    },
+    {
+      stu_id: 2152668,
+      email: "khoa.bui2807@hcmut.edu.vn",
+      name: "Bùi Đăng Khoa",
+      roles: [{ name: "User" }],
+    },
+    {
+      stu_id: 2053214,
+      email: "minh.hoangkhmtclc254@hcmut.edu.vn",
+      name: "Hoàng Phan Ngọc Minh",
       roles: [{ name: "User" }],
     },
     {
       stu_id: 2153637,
-      email: "mamahdedeh34@gmail.com",
-      name: "Indah Sari Devi",
+      email: "nguyen.tran186@hcmut.edu.vn",
+      name: "Trần Bảo Nguyên",
       roles: [{ name: "User" }],
     },
     {
-      stu_id: 2153637,
-      email: "mamahdedeh34@gmail.com",
-      name: "Indah Sari Devi",
+      stu_id: 2152289,
+      email: "thanh.phamhuynh2806@hcmut.edu.vn",
+      name: "Phạm Huỳnh Quốc Thạnh",
       roles: [{ name: "User" }],
     },
     {
-      stu_id: 2153637,
-      email: "mamahdedeh34@gmail.com",
-      name: "Indah Sari Devi",
+      stu_id: 2153915,
+      email: "triet.nguyenminhbk2908@hcmut.edu.vn",
+      name: "Nguyễn Minh Triết",
       roles: [{ name: "User" }],
     },
     {
-      stu_id: 2153637,
-      email: "mamahdedeh34@gmail.com",
-      name: "Indah Sari Devi",
-      roles: [{ name: "User" }],
-    },
-    {
-      stu_id: 2153637,
-      email: "mamahdedeh34@gmail.com",
-      name: "Indah Sari Devi",
-      roles: [{ name: "User" }],
-    },
-    {
-      stu_id: 2153637,
-      email: "mamahdedeh34@gmail.com",
-      name: "Indah Sari Devi",
+      stu_id: 2153507,
+      email: "triet.trancse21@hcmut.edu.vn",
+      name: "Trần Minh Triết",
       roles: [{ name: "User" }],
     },
   ];

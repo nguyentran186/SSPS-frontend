@@ -21,10 +21,10 @@ function AdminTable({ loading, dataHeader, data, handleDelete }) {
             </span>
           </TableCell>
           <TableCell dataLabel="Email" showLabel={true}>
-            <p className="font-normal text-sm text-gray-500">{row.email}</p>
+            <p className="font-normal text-sm text-gray-500">{row.name}</p>
           </TableCell>
           <TableCell dataLabel="Email" showLabel={true}>
-            <p className="font-normal text-sm text-gray-500">{row.name}</p>
+            <p className="font-normal text-sm text-gray-500">{row.email}</p>
           </TableCell>
           <TableCell dataLabel="Role" showLabel={true}>
             <span className=" space-x-1">

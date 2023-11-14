@@ -50,7 +50,7 @@ function PrLog() {
     {
       key: "delete",
       label: "Xóa",
-    },
+    }
   ];
   const handleDelete = () => { };
   const data = [
@@ -113,7 +113,7 @@ function PrLog() {
       paper: "A4",
       page: 40,
       quantity: 1
-    },
+    }
   ];
   return (
     <>

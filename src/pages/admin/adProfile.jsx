@@ -17,8 +17,8 @@ function AdProfile({ ...props }) {
   const dataOS = [
     {
       title: "Kết nối máy in",
-      date: "22/10/2023",
-      id: "C06F201",
+      date: "21/10/2023",
+      id: "B04F501",
       color: "cardInfo",
     },
     {
@@ -30,8 +30,8 @@ function AdProfile({ ...props }) {
     {
       title: "Ngắt kết nối máy in",
       date: "20/10/2023",
-      id: "C06F202",
-      color: "cardInfo",
+      id: "B10F201",
+      color: "cardDanger",
     },
     {
       title: "Ngắt kết nối máy in",
