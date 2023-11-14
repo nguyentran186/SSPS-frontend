@@ -8,7 +8,7 @@ export default function AddModal(...props) {
     return (
         <>
             <div className="mb-5">
-                <button className="bg-emerald-200 hover:bg-gray-400 text-green-900 font-bold py-2 px-4 rounded inline-flex items-center" onClick={() => setShowModal(true)}>
+                <button className="bg-green-200 hover:bg-emerald-400 text-green-900 font-bold py-2 px-4 rounded inline-flex items-center rounded-md" onClick={() => setShowModal(true)}>
                     <FontAwesomeIcon className="mr-2" icon={faPlus} />
                     <span>Thêm tài khoản</span>
                 </button>
