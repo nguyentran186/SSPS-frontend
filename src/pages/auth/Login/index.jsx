@@ -62,15 +62,15 @@ function LoginIndex() {
           <div className="flex flex-col md:flex-1 items-center justify-center">
             <div className="loginWrapper flex flex-col w-full lg:px-36 md:px-8 px-8 md:py-8">
               {/* Login Header Text */}
-              <div className="hidden md:block font-medium self-center text-xl sm:text-3xl text-gray-800">
-                SPSS
+              <div className="hidden md:block font-black self-center text-xl sm:text-3xl text-gray-800">
+                HCMUT - SSPS
               </div>
 
               {/* Sparator */}
               <div className="hidden md:block relative mt-10 h-px bg-gray-300">
                 <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
                   <span className="bg-white px-4 text-xs text-gray-500 uppercase">
-                    Smart Printing Service System
+                    HỆ THỐNG IN ẤN THÔNG MINH
                   </span>
                 </div>
               </div>
@@ -97,7 +97,7 @@ function LoginIndex() {
                         onChange={e => setData({ ...data, email: e.target.value })}
                         required
                         className="text-sm placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full md:py-2 py-3 focus:outline-none focus:border-emerald-400"
-                        placeholder="E-Mail Address"
+                        placeholder="Email"
                       />
                     </div>
                     {error?.email && (
@@ -122,7 +122,7 @@ function LoginIndex() {
                         onChange={e => setData({ ...data, password: e.target.value })}
                         required
                         className="text-sm placeholder-gray-500 pl-10 pr-4 rounded-lg border border-gray-400 w-full md:py-2 py-3 focus:outline-none focus:border-emerald-400"
-                        placeholder="Password"
+                        placeholder="Mật khẩu"
                       />
                     </div>
                     {error?.password && (
@@ -151,7 +151,7 @@ function LoginIndex() {
               <div className="relative mt-6 h-px bg-gray-300">
                 <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
                   <span className="bg-white px-4 text-xs text-gray-500 uppercase">
-                    Hệ thống máy in Đại học bách khoa hồ chí minh
+                    TRƯỜNG ĐẠI HỌC BÁCH KHOA - ĐẠI HỌC QUỐC GIA TP.HCM
                   </span>
                 </div>
               </div>
