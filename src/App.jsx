@@ -3,12 +3,18 @@ import { Route, Routes } from "react-router-dom";
 
 import Profile from "./pages/user/Profile";
 import PrService from "./pages/user/Print_service";
-import AuthLayout from "./components/Layout/AuthLayout";
-import GuestLayout from "./components/Layout/GuestLayout";
-import Login from "./pages/auth/Login";
 import PrLog from "./pages/user/Printer_log";
 import Bank from "./pages/user/Bank";
 import Form from "./pages/user/Form";
+import UpFile from "./pages/user/Upload_files";
+import PrinterSelect from "./pages/user/Printer_select";
+import PrQueue from "./pages/user/Print_queue";
+
+import AuthLayout from "./components/Layout/AuthLayout";
+import GuestLayout from "./components/Layout/GuestLayout";
+
+import Login from "./pages/auth/Login";
+
 import AccManage from "./pages/admin/accManage";
 import AdProfile from "./pages/admin/adProfile";
 import AdLog from "./pages/admin/adLog";
@@ -29,6 +35,9 @@ function App() {
           <Route path="/user" element={<AuthLayout menu={initMenus}/>}>
             <Route path="/user/" element={<Profile />}></Route>
             <Route path="/user/printService" element={<PrService />}></Route>
+            <Route path="/user/uploadFile" element={<UpFile />}></Route>
+            <Route path="/user/selectPrinter" element={<PrinterSelect />}></Route>
+            <Route path="/user/printQueue" element={<PrQueue />}></Route>
             <Route path="/user/printHistory" element={<PrLog />}></Route>
             <Route path="/user/bank" element={<Bank />}></Route>
             <Route path="/user/info" element={<Form />}></Route>
