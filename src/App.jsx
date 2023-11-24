@@ -6,7 +6,6 @@ import PrService from "./pages/user/Print_service";
 import PrLog from "./pages/user/Printer_log";
 import Bank from "./pages/user/Bank";
 import Form from "./pages/user/Form";
-import UpFile from "./pages/user/Upload_files";
 import PrinterSelect from "./pages/user/Printer_select";
 import PrQueue from "./pages/user/Print_queue";
 
