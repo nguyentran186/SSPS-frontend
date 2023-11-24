@@ -34,7 +34,6 @@ function App() {
           <Route path="/user" element={<AuthLayout menu={initMenus}/>}>
             <Route path="/user/" element={<Profile />}></Route>
             <Route path="/user/printService" element={<PrService />}></Route>
-            <Route path="/user/uploadFile" element={<UpFile />}></Route>
             <Route path="/user/selectPrinter" element={<PrinterSelect />}></Route>
             <Route path="/user/printQueue" element={<PrQueue />}></Route>
             <Route path="/user/printHistory" element={<PrLog />}></Route>
