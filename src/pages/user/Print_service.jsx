@@ -1,7 +1,7 @@
 import React, { useContext,useState, useRef, useEffect } from "react";
 import Navbar from "../../components/Navbar/Index";
 import AchievementWidget from "../../components/Widget/Achievment.jsx";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, Link } from "react-router-dom";
 import axios from '../../api/axios.js' //will need this for ACTUAL file uploading stuff
 
 import printIcon from "../../assets/images/printicon.svg";
@@ -90,9 +90,9 @@ function Print_service({ ...props }) {
                 <button onClick={handleButtonClick} className="md:col-start-3 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12">
                   Thêm tệp
                 </button>
-                <button /*onClick= to next page */ className="md:col-start-4 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12">
+                <Link to="/user/selectPrinter" className="md:col-start-4 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12 flex justify-center items-center">
                   Tiếp tục
-                </button> 
+                </Link> 
             </div>
             
           </div>
