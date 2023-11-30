@@ -32,7 +32,12 @@ function LoginIndex() {
       }
       else {
         setData({})
-        navigate("/user")
+        if (data["is_admin"] == false) {
+          navigate("/user")
+        }
+        else {
+          navigate("/admin")
+        }
       }
     } catch (error) {
       console.log('Login Failed')
