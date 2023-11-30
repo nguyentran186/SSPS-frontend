@@ -1,15 +1,8 @@
 import * as React from "react";
-import ReactSelect from 'react-select'
 import Navbar from "../../components/Navbar/Index";
-import StatisticWidget from "../../components/Widget/Statistic.jsx";
-import AchievementWidget from "../../components/Widget/Achievment.jsx";
-import ScrolledCard from "../../components/Widget/ScrolledCard.jsx";
 import { useOutletContext, Link } from "react-router-dom";
-import { UserContext } from "../../context/userContext.js";
-import axios from '../../api/axios.js'
 import Select from 'react-select'
 
-import printIcon from "../../assets/images/printicon.svg";
 
 function Printer_select({ ...props }) {
 
@@ -28,8 +21,6 @@ function Printer_select({ ...props }) {
 		console.log("Button clicked"); // Debugging
 	};
 
-	const avatar = ""
-	// user.user.img_source;
 
 	const [sidebarToggle] = useOutletContext();
 
