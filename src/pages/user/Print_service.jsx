@@ -135,10 +135,10 @@ function Print_service({ ...props }) {
                 <div className="md:col-start-6 md:col-span-2 h-full overflow-hidden">
                   <AchievementWidget />
                 </div>
-                <button onClick={handleButtonClick} className="md:col-start-3 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12">
+                <button onClick={handleButtonClick} className="md:col-start-4 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12">
                   Thêm tệp
                 </button>
-                <Link to="/user/selectPrinter" className="md:col-start-4 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12 flex justify-center items-center">
+                <Link to="/user/selectPrinter" className="md:col-start-5 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12 flex justify-center items-center">
                   Tiếp tục
                 </Link> 
             </div>
