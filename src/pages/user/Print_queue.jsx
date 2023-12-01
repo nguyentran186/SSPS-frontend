@@ -1,25 +1,12 @@
 import * as React from "react";
-import ReactSelect from 'react-select'
 import Navbar from "../../components/Navbar/Index";
-import StatisticWidget from "../../components/Widget/Statistic.jsx";
-import AchievementWidget from "../../components/Widget/Achievment.jsx";
-import ScrolledCard from "../../components/Widget/ScrolledCard.jsx";
 import { useOutletContext, Link } from "react-router-dom";
-import { UserContext } from "../../context/userContext.js";
-import axios from '../../api/axios.js'
-import Select from 'react-select'
 import TableCell from "../../components/Datatables/TableCell";
 import Datatables from "../../components/Datatables/Table";
-import Header from "../../components/Datatables/Header";
-
-import printIcon from "../../assets/images/printicon.svg";
-
 
 
 function Print_queue({ ...props }) {
 
-	const avatar = "";
-	// user.user.img_source;
 
 	const [sidebarToggle] = useOutletContext();
 
