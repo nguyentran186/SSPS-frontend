@@ -87,7 +87,7 @@ function Print_service({ ...props }) {
                   <div className="overflow-y-auto max-h-full items-start">
                     {files.map((file, index) => (
                     <div key={index} className="rounded p-4 bg-[#D9F99D] h-64 w-full md:col-span-full mb-5 flex items-start">
-                        <div className="mr-4 mt-4">
+                        <div className="mr-4 mt-4 text-center">
                             {(file.type === 'application/pdf' || file.type === 'application/msword' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') ? (
                             <img src={getRandomImage()} alt="Placeholder for document" className="h-40 object-cover mb-2" />
                             ) : (
