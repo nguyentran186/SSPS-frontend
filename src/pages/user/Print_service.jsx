@@ -86,40 +86,43 @@ function Print_service({ ...props }) {
                 <div className="h-full rounded-lg flex-col items-center justify-center overflow-hidden bg-green-200 p-5">
                   <div className="overflow-y-auto max-h-full items-start">
                     {files.map((file, index) => (
-                    <div key={index} className="rounded p-4 bg-[#D9F99D] h-64 w-full md:col-span-full mb-5">
-                        {(file.type === 'application/pdf' || file.type === 'application/msword' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') ? (
-                          <img src={getRandomImage()} alt="Placeholder for document" className="h-5/6 object-cover mb-2" style={{ alignSelf: 'flex-start', display: 'inline-block'}} />
-                        ) : (
-                        <img src={URL.createObjectURL(file)} alt={file.name} className="h-5/6 object-cover mb-2" style={{ alignSelf: 'flex-start', display: 'inline-block'}} />
-						)}
-						<div className="grid grid-cols-2 gap-2 ml-8" style={{ display: 'inline-block'}}>
-								<div className="col-start-1">
-								<b>Chọn máy in</b>
-								<Select className="rounded-lg focus:outline-none focus:border-emerald-400"
-								placeholder="div1"
-								components={{
-									IndicatorSeparator: () => null
-								}} />		
-							</div>
-								<div className="col-start-1">
-								<b>Chọn máy in</b>
-								<Select className="rounded-lg focus:outline-none focus:border-emerald-400"
-								placeholder="div2"
-								components={{
-									IndicatorSeparator: () => null
-								}} />		
-								</div>
-								<div className="col-start-1">
-								<b>Chọn máy in</b>
-								<Select className="rounded-lg focus:outline-none focus:border-emerald-400"
-								placeholder="div2"
-								components={{
-									IndicatorSeparator: () => null
-								}} />		
-							</div>
-						</div>
-                        <p className="text-s" style={{alignSelf: 'flex-start'}}>{file.name.length > 15 ? file.name.substring(0, 15) + '...' : file.name}</p>
-                    
+                    <div key={index} className="rounded p-4 bg-[#D9F99D] h-64 w-full md:col-span-full mb-5 flex items-start">
+                        <div className="mr-4 mt-4">
+                            {(file.type === 'application/pdf' || file.type === 'application/msword' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') ? (
+                            <img src={getRandomImage()} alt="Placeholder for document" className="h-40 object-cover mb-2" />
+                            ) : (
+                            <img src={URL.createObjectURL(file)} alt={file.name} className="h-5/6 object-cover mb-2" />
+                            )}
+                            <p className="text-s">{file.name.length > 15 ? file.name.substring(0, 15) + '...' : file.name}</p>
+                        </div>
+                        <div className="flex-grow">
+                            <div className="grid grid-cols-1 gap-2">
+                                <div>
+                                  <b>Chọn máy in</b>
+                                  <Select className="rounded-lg focus:outline-none focus:border-emerald-400"
+                                  placeholder="div1"
+                                  components={{
+                                    IndicatorSeparator: () => null
+                                  }} />		
+                                </div>
+                                <div>
+                                  <b>Chọn máy in</b>
+                                  <Select className="rounded-lg focus:outline-none focus:border-emerald-400"
+                                  placeholder="div2"
+                                  components={{
+                                    IndicatorSeparator: () => null
+                                  }} />		
+                                </div>
+                                <div>
+                                  <b>Chọn máy in</b>
+                                  <Select className="rounded-lg focus:outline-none focus:border-emerald-400"
+                                  placeholder="div2"
+                                  components={{
+                                    IndicatorSeparator: () => null
+                                  }} />		
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     ))}
 					
