@@ -33,10 +33,6 @@ function Printer_select({ ...props }) {
 
 	const [sidebarToggle] = useOutletContext();
 
-	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-	const [focusedValue, setFocusedValue] = React.useState("");
-	const [selectedOption, setSelectedOption] = React.useState(null);
-
 	return (
 		<>
 			<main className="h-full">
@@ -48,15 +44,7 @@ function Printer_select({ ...props }) {
 							<div className="h-auto md:col-start-1 md:col-span-3 flex flex-col justify-top overflow-hidden">
 								<b>Chọn máy in</b>
 								<Select className="md:pt-3 rounded-lg focus:outline-none focus:border-emerald-400"
-									value={selectedOption}
-									onChange={setSelectedOption}
 									options={OPTIONS}
-									isMenuOpen={isMenuOpen}
-									onMenuOpen={() => setIsMenuOpen(true)}
-									onMenuClose={() => {
-										setFocusedValue("");
-										setIsMenuOpen(false);
-									}}
 									getOptionLabel={(OPTIONS) => OPTIONS.label}
 									placeholder="Chọn máy in"
 									components={{
