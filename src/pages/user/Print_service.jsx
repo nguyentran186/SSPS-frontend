@@ -86,41 +86,82 @@ function Print_service({ ...props }) {
                 <div className="h-full rounded-lg flex-col items-center justify-center overflow-hidden bg-green-200 p-5">
                   <div className="overflow-y-auto max-h-full items-start">
                     {files.map((file, index) => (
-                    <div key={index} className="rounded p-4 bg-[#D9F99D] h-64 w-full md:col-span-full mb-5 flex items-start">
-                        <div className="mr-4 mt-4 text-center">
+                    <div key={index} className="rounded p-4 bg-[#D9F99D] lg:h-64 w-full md:col-span-full mb-5 flex items-start">
+                        <div className="mr-5 mt-4 text-center">
                             {(file.type === 'application/pdf' || file.type === 'application/msword' || file.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') ? (
                             <img src={getRandomImage()} alt="Placeholder for document" className="h-40 object-cover mb-2" />
                             ) : (
                             <img src={URL.createObjectURL(file)} alt={file.name} className="h-5/6 object-cover mb-2" />
                             )}
-                            <p className="text-s">{file.name.length > 15 ? file.name.substring(0, 15) + '...' : file.name}</p>
+                            <p className="text-s">{file.name.length > 13 ? file.name.substring(0, 13) + '...' : file.name}</p>
                         </div>
                         <div className="flex-grow">
-                            <div className="grid grid-cols-1 gap-2">
-                                <div>
-                                  <b>Chọn máy in</b>
+							<div className="lg:grid grid-cols-2 gap-5">
+							<div className="col-start-1">
+							<div className="mb-2">
+                                  <b>Tên tệp</b><br/>
+								  <input
+									id="filename"
+									type="text"
+									name="filename"
+									className="text-base placeholder-gray-500 px-3 py-1.5 rounded border border-gray-300 focus:outline-none focus:border-emerald-400 w-full"
+									placeholder={file.name.length > 17 ? file.name.substring(0, 17) + '...' : file.name}
+                					/>
+                                </div>
+                                <div className="mb-2">
+                                  <b>Số bản in</b><br/>
+                                  <input
+									id="copies"
+									type="number"
+									name="copies"
+									className="text-base placeholder-gray-500 px-3 py-1.5 rounded border border-gray-300 focus:outline-none focus:border-emerald-400 w-full"
+                					/>	
+                                </div>
+                                <div className="mb-2">
+                                  <b>In các trang</b><br/>
+                                  <input
+									id="pages"
+									type="text"
+									name="pages"
+									className="text-base placeholder-gray-500 px-3 py-1.5 rounded border border-gray-300 focus:outline-none focus:border-emerald-400 w-full"
+									placeholder="Tất cả trang"			
+									/>
+									<p className="ml-2" style={{ fontSize: 12 }}>Vd: 1-5 để in từ trang 1 đến trang 5</p>		
+								</div>
+								</div>
+									
+								<div className="col-start-2">
+                                <div className="mb-2">
+                                  <b>Khổ giấy</b>
                                   <Select className="rounded-lg focus:outline-none focus:border-emerald-400"
-                                  placeholder="div1"
-                                  components={{
+									placeholder="Khổ giấy"
+									options={paperOptions}
+									getOptionLabel={(paperOptions) => paperOptions.label}
+                                  	components={{
                                     IndicatorSeparator: () => null
                                   }} />		
                                 </div>
-                                <div>
-                                  <b>Chọn máy in</b>
+                                <div className="mb-2">
+                                  <b>Hướng giấy</b>
                                   <Select className="rounded-lg focus:outline-none focus:border-emerald-400"
-                                  placeholder="div2"
-                                  components={{
+                                  placeholder="Hướng giấy"
+                                  options={orientationOptions}
+									getOptionLabel={(orientationOptions) => orientationOptions.label}
+									components={{
                                     IndicatorSeparator: () => null
                                   }} />		
                                 </div>
-                                <div>
-                                  <b>Chọn máy in</b>
+                                <div className="mb-2">
+                                  <b>In trên</b>
                                   <Select className="rounded-lg focus:outline-none focus:border-emerald-400"
-                                  placeholder="div2"
-                                  components={{
+								  	placeholder="In trên"
+								  	options={printOnOptions}
+									getOptionLabel={(printOnOptions) => printOnOptions.label}
+                                  	components={{
                                     IndicatorSeparator: () => null
                                   }} />		
-                                </div>
+									</div>
+								</div>
                             </div>
                         </div>
                     </div>
