@@ -16,30 +16,30 @@ function MinhTable({ loading, dataHeader, data, handleDelete }) {
           key={index}
           className="bg-white border md:border-b block md:table-row rounded-md shadow-md md:rounded-none md:shadow-none mb-5"
         >
-          <TableCell dataLabel="Number" showLabel={true}>
+          <TableCell dataLabel="Mã số máy in" showLabel={true}>
             <span className="font-medium text-sm text-gray-900">
               {row.printer_id}
             </span>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
+          <TableCell dataLabel="Nhãn hiệu" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.brand}</p>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
+          <TableCell dataLabel="Mẫu máy in" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.model}</p>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
+          <TableCell dataLabel="Miêu tả" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.description}</p>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
+          <TableCell dataLabel="Cơ sở" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.base}</p>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
+          <TableCell dataLabel="Tòa" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.building}</p>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
+          <TableCell dataLabel="Phòng" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.room}</p>
           </TableCell>
-          <TableCell dataLabel="Role" showLabel={true}>
+          <TableCell dataLabel="Trình trạng" showLabel={true}>
             <span className=" space-x-1">
               {row.roles?.map((role, index) => (
                 <span
