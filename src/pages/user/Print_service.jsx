@@ -82,7 +82,7 @@ function Print_service({ ...props }) {
       {fileUploaded ? (
         // already uploaded some files
         <>
-          <main className="h-full">
+          <main className="h-full overflow-hidden">
             <div className="px-2 mx-auto mainCard h-full overflow-hidden">
               <div className="w-full text-slate-700 md:grid gap-4 grid md:grid-cols-7 h-full overflow-hidden">
                 <div className="h-full rounded-lg md:col-start-1 md:col-span-5 md:row-span-2 flex-col items-center justify-center overflow-hidden bg-green-200">
