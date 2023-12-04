@@ -15,18 +15,18 @@ function AdminTable({ loading, dataHeader, data, handleDelete }) {
           key={index}
           className="bg-white border md:border-b block md:table-row rounded-md shadow-md md:rounded-none md:shadow-none mb-5"
         >
-          <TableCell dataLabel="Number" showLabel={true}>
+          <TableCell dataLabel="MSSV" showLabel={true}>
             <span className="font-medium text-sm text-gray-900">
               {row.stu_id}
             </span>
           </TableCell>
-          <TableCell dataLabel="Email" showLabel={true}>
+          <TableCell dataLabel="Họ và tên" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.name}</p>
           </TableCell>
           <TableCell dataLabel="Email" showLabel={true}>
             <p className="font-normal text-sm text-gray-500">{row.email}</p>
           </TableCell>
-          <TableCell dataLabel="Role" showLabel={true}>
+          <TableCell dataLabel="Phân quyền" showLabel={true}>
             <span className=" space-x-1">
               {row.roles?.map((role, index) => (
                 <span
