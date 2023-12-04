@@ -81,7 +81,7 @@ function LoginIndex() {
               </div>
 
               <div className="md:hidden block my-4">
-                <h1 className="text-2xl font-semibold">Login</h1>
+                <h1 className="text-2xl font-semibold">ĐĂNG NHẬP</h1>
               </div>
 
               {/* Login Form */}
@@ -139,15 +139,16 @@ function LoginIndex() {
 
                   {/* Button Login */}
                   <div className="flex w-full">
-                    <button
+                    {/* <button
                       // disabled={loading}
                       type="submit"
                       className="flex items-center justify-center focus:outline-none text-white text-sm bg-emerald-500 hover:bg-emerald-700 rounded-lg md:rounded md:py-2 py-3 w-full transition duration-150 ease-in"
                     >
                       <span className="mr-2 md:uppercase">
-                        {loading ? "Processing...." : "Đăng nhập"}
+                        {loading ? "Processing...." : "ĐĂNG NHẬP"}
                       </span>
-                    </button>
+                    </button> */}
+					<Link to={(data.email=='admin@hcmut.edu.vn') ? "/admin" : "/user"} className="flex items-center justify-center focus:outline-none text-white text-sm bg-emerald-500 hover:bg-emerald-700 rounded-lg md:rounded md:py-2 py-3 w-full transition duration-150 ease-in"> ĐĂNG NHẬP </Link>
                   </div>
                 </form>
               </div>
@@ -156,7 +157,7 @@ function LoginIndex() {
               <div className="relative mt-6 h-px bg-gray-300">
                 <div className="absolute left-0 top-0 flex justify-center w-full -mt-2">
                   <span className="bg-white px-4 text-xs text-gray-500 uppercase">
-                    TRƯỜNG ĐẠI HỌC BÁCH KHOA - ĐẠI HỌC QUỐC GIA TP.HCM
+                    TRƯỜNG ĐẠI HỌC BÁCH KHOA TP.HCM
                   </span>
                 </div>
               </div>

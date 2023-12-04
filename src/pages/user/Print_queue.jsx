@@ -19,48 +19,48 @@ function Print_queue({ ...props }) {
 	const data = [
 		{
 			id: 1,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		},
 		{
 			id: 2,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		}, {
 			id: 3,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		}, {
 			id: 4,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		}, {
 			id: 5,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		}, {
 			id: 6,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		},
 		{
 			id: 7,
-			content: "File của bạn ở đây",
+			content: "Các file của bạn ở đây",
 			tag: 1
 		},
 		{
 			id: 8,
-			content: "File của bạn ở đây",
-			tag: 1
+			content: "Đang đợi...",
+			tag: 0
 		},
 		{
 			id: 9,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		},
 		{
 			id: 10,
-			content: "Đang đợi",
+			content: "Đang đợi...",
 			tag: 0
 		},
 	];

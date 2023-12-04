@@ -17,7 +17,6 @@ const images = [docimage1, docimage2, docimage3, docimage4, docimage5];
 const paperOptions = [
   { label: "A3", value: 3 },
   { label: "A4", value: 4 },
-  { label: "A5", value: 5 },
 ];
 
 const orientationOptions = [
@@ -107,7 +106,7 @@ function Print_service({ ...props }) {
                               <img
                                 src={URL.createObjectURL(file)}
                                 alt={file.name}
-                                className="h-5/6 object-cover mb-2"
+                                className="h-40 object-cover mb-2"
                               />
                             )}
                             <p className="text-s">
@@ -139,7 +138,8 @@ function Print_service({ ...props }) {
                                   <br />
                                   <input
                                     id="copies"
-                                    type="number"
+									type="number"
+									min={1}
                                     name="copies"
                                     className="text-base placeholder-gray-500 px-3 py-1.5 rounded border border-gray-300 focus:outline-none focus:border-emerald-400 w-full"
                                   />
