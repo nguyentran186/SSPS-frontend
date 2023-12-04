@@ -14,30 +14,30 @@ function AdLogTable({ loading, dataHeader, data, handleDelete }) {
           key={index}
           className="bg-white border md:border-b block md:table-row rounded-md shadow-md md:rounded-none md:shadow-none mb-5"
         >
-          <TableCell dataLabel="id" showLabel={true}>
+          <TableCell dataLabel="STT" showLabel={true}>
             <span className="font-medium text-sm text-gray-900">
               {row.id}
             </span>
           </TableCell>
-          <TableCell dataLabel="Tên người dùng" showLabel={true}>
+          <TableCell dataLabel="Họ và tên" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.user_name}</p>
           </TableCell>
-          <TableCell dataLabel="Email người dùng" showLabel={true}>
+          <TableCell dataLabel="Email" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.email}</p>
           </TableCell>
-          <TableCell dataLabel="Tên File" showLabel={true}>
+          <TableCell dataLabel="Mã số máy in" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.print_id}</p>
           </TableCell>
-          <TableCell dataLabel="Thời Gian" showLabel={true}>
+          <TableCell dataLabel="Tên file" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.file_name}</p>
           </TableCell>
-          <TableCell dataLabel="Tên File" showLabel={true}>
+          <TableCell dataLabel="Ngày in" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.date}</p>
           </TableCell>
-          <TableCell dataLabel="Thời Gian" showLabel={true}>
+          <TableCell dataLabel="Thời gian bắt đầu" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.start_time}</p>
           </TableCell>
-          <TableCell dataLabel="Thời Gian" showLabel={true}>
+          <TableCell dataLabel="Thời gian kết thúc" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.end_time}</p>
           </TableCell>
           <TableCell dataLabel="Kích Thước" showLabel={true}>
@@ -45,10 +45,10 @@ function AdLogTable({ loading, dataHeader, data, handleDelete }) {
               {row.size}
             </span>
           </TableCell>
-          <TableCell dataLabel="Thời Gian" showLabel={true}>
+          <TableCell dataLabel="Khổ giấy" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.paper}</p>
           </TableCell>
-          <TableCell dataLabel="Thời Gian" showLabel={true}>
+          <TableCell dataLabel="Số trang" showLabel={true}>
             <p className="font-normal text-sm text-gray-900">{row.page}</p>
           </TableCell>
           <TableCell dataLabel="Số lượng" showLabel={true}>
