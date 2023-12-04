@@ -7,6 +7,7 @@ import { UserContext } from "../../context/userContext";
 
 function AuthLayout({...props}) {
   const isDesktop = () => document.body.clientWidth > 768;
+  
   const [sidebarStatus, setSidebarStatus] = useState("");
 
   useEffect(() => {
@@ -31,7 +32,7 @@ function AuthLayout({...props}) {
       </div>
 
       {/* Bottom Navigation */}
-      <BottomNavbar />
+      {/*sidebarStatus && <BottomNavbar />*/}
     </div>
   );
 }
