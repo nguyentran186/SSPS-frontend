@@ -15,12 +15,16 @@ With a system of printers located in different areas around the school, students
 HCMUT-SSPS provides the following features:
 
 1. For students and lecturers:
-- Func1
-- Func2
+- Print files uploaded by users.
+- Configure and preview before printing.
+- View printing history.
+- Connect your bank account to make payments.
 
 2. For Student Printing Service Officer (SPSO)
-- Func1
-- Func2
+- Manage all users, including adding, deleting, and granting permissions.
+- Manage all files that are allowed to be printed.
+- Manage all information and operating status of the printers in the system.
+- View my printing history of all users.
 
 ## Installation
 
@@ -43,9 +47,3 @@ npm start
 ```
 Open your web browser and navigate to http://localhost:3000 to access the HCMUT-SSPS.
 
-
-    
-#Nguyen commit
-npm install
-npm run build
-npm start
