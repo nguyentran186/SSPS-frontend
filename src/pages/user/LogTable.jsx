@@ -14,7 +14,7 @@ function LogTable({ loading, dataHeader, data, handleDelete }) {
           key={index}
           className="bg-white border md:border-b block md:table-row rounded-md shadow-md md:rounded-none md:shadow-none mb-5"
         >
-          <TableCell dataLabel="id" showLabel={true}>
+          <TableCell dataLabel="STT" showLabel={true}>
             <span className="font-medium text-sm text-gray-900">
               {row.id}
             </span>

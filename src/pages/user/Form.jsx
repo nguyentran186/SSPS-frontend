@@ -4,6 +4,8 @@ import { useOutletContext } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faFloppyDisk, faIdCard, faPhone, faSignature } from "@fortawesome/free-solid-svg-icons";
 
+import ava from "../../assets/images/ava1.jpg"
+
 function Form() {
   const [sidebarToggle] = useOutletContext();
   const data = {
@@ -19,7 +21,7 @@ function Form() {
 
         {/* Main Content */}
         <div className="mt-6 w-fit mx-auto">
-          <img src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe" class="rounded-full w-28 " alt="profile picture" srcset="" />
+          <img src={ava} class="rounded-full w-28 " alt="profile picture" srcset="" />
         </div>
         <div className="text-center mt-4">
           <button class="bg-white hover:bg-gray-100 text-gray-800 font-sanserif py-2 px-3 border border-gray-400 rounded shadow">

@@ -51,7 +51,7 @@ function Sidebar({ ...props }) {
                 className="py-2 px-4 border border-emerald-500 bg-emerald-600 w-full rounded-full text-gray-200 hover:bg-emerald-600 hover:border-emerald-600 justify-end text-sm"
                 onClick={() => logout()}
               >
-                <FontAwesomeIcon icon={faSignOut}></FontAwesomeIcon> Logout
+                <FontAwesomeIcon icon={faSignOut}></FontAwesomeIcon> Đăng xuất
               </button>
             </div>
           </div>
