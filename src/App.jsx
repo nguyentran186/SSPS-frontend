@@ -31,7 +31,7 @@ function App() {
     <React.StrictMode>
       <Routes>
         <Route path="/" element={<Login />}></Route>
-        <Route path="/user" element={<AuthLayout menu={initMenus} />}>
+        {/* <Route path="/user" element={<AuthLayout menu={initMenus} />}>
           <Route path="/user/" element={<Profile />}></Route>
         </Route>
         <Route path="/printService" element={<AuthLayout menu={initMenus} />}>
@@ -73,7 +73,7 @@ function App() {
         </Route>
         <Route path="/prManage" element={<AuthLayout menu={initMenus} />}>
           <Route path="/prManage/" element={<PrManage />}></Route>
-        </Route>
+        </Route> */}
       </Routes>
     </React.StrictMode>
 
