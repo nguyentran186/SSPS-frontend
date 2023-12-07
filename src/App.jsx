@@ -29,26 +29,52 @@ import { UserContextProvider } from "./context/userContext";
 function App() {
   return (
     <React.StrictMode>
-        <Routes>
-          <Route path="/" element={<Login />}></Route>
-          <Route path="/user" element={<AuthLayout menu={initMenus}/>}>
-            <Route path="/user/" element={<Profile />}></Route>
-            <Route path="/user/printService" element={<PrService />}></Route>
-            <Route path="/user/selectPrinter" element={<PrinterSelect />}></Route>
-            <Route path="/user/printQueue" element={<PrQueue />}></Route>
-            <Route path="/user/printHistory" element={<PrLog />}></Route>
-            <Route path="/user/bank" element={<Bank />}></Route>
-            <Route path="/user/info" element={<Form />}></Route>
-            <Route path="/user/noPaper" element={<NoPaper/>}></Route>
-          </Route>
-          <Route path="/admin" element={<AuthLayout  menu={initadMenu}/>}>
-            <Route path="/admin/" element={<AdProfile />}></Route>
-            <Route path="/admin/accManage" element={<AccManage />}></Route>
-            <Route path="/admin/adLog" element={<AdLog />}></Route>
-            <Route path="/admin/perFileManage" element={<PerFileManage />}></Route>
-            <Route path="/admin/prManage" element={<PrManage />}></Route>
-          </Route>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Login />}></Route>
+        <Route path="/user" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/user/" element={<Profile />}></Route>
+        </Route>
+        <Route path="/printService" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/printService/" element={<PrService />}></Route>
+        </Route>
+        <Route path="/selectPrinter" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/selectPrinter/" element={<PrinterSelect />}></Route>
+        </Route>
+        <Route path="/printQueue" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/printQueue/" element={<PrQueue />}></Route>
+        </Route>
+        <Route path="/printHistory" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/printHistory/" element={<PrLog />}></Route>
+        </Route>
+        <Route path="/bank" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/bank/" element={<Bank />}></Route>
+        </Route>
+        <Route path="/info" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/info/" element={<Form />}></Route>
+        </Route>
+        <Route path="/noPaper" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/noPaper/" element={<NoPaper />}></Route>
+        </Route>
+
+        <Route path="/admin" element={<AuthLayout menu={initadMenu} />}>
+          <Route path="/admin/" element={<AdProfile />}></Route>
+        </Route>
+        <Route path="/accManage" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/accManage/" element={<AccManage />}></Route>
+        </Route>
+        <Route path="/accManage" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/accManage/" element={<AccManage />}></Route>
+        </Route>
+        <Route path="/adLog" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/adLog/" element={<AdLog />}></Route>
+        </Route>
+        <Route path="/perFileManage" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/perFileManage/" element={<PerFileManage />}></Route>
+        </Route>
+        <Route path="/prManage" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/prManage/" element={<PrManage />}></Route>
+        </Route>
+      </Routes>
     </React.StrictMode>
 
   );

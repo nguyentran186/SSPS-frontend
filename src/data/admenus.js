@@ -17,18 +17,18 @@ const initadMenu = [
   },
   {
     label: "Quản lý tài khoản",
-    path: "/admin/accManage",
+    path: "/accManage",
     icon: faUsers,
   },
   {
     label: "Quản lý máy in",
-    path: "/admin/prManage",
+    path: "/prManage",
     icon: faPrint,
   },
   
   {
     label: "Quản lý tập tin",
-    path: "/admin/perFileManage",
+    path: "/perFileManage",
     icon: faFileLines
   },
 
@@ -37,7 +37,7 @@ const initadMenu = [
   },
   {
     label: "Lịch sử in",
-    path: "/admin/adLog",
+    path: "/adLog",
     icon: faClockFour,
   },
 ];
