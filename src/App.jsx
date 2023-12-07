@@ -29,7 +29,6 @@ import { UserContextProvider } from "./context/userContext";
 function App() {
   return (
     <React.StrictMode>
-      <UserContextProvider>
         <Routes>
           <Route path="/" element={<Login />}></Route>
           <Route path="/user" element={<AuthLayout menu={initMenus}/>}>
@@ -50,7 +49,6 @@ function App() {
             <Route path="/admin/prManage" element={<PrManage />}></Route>
           </Route>
         </Routes>
-      </UserContextProvider>
     </React.StrictMode>
 
   );
