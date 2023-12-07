@@ -22,25 +22,11 @@ function LoginIndex() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { email, password } = data
-    try {
-      const { data } = await axios.post(LOGIN_URL, {
-        email,
-        password
-      })
-      if (data.error) {
-        console.log(data.error)
-      }
-      else {
-        setData({})
-        if (data["is_admin"] == false) {
-          navigate("/user")
-        }
-        else {
-          navigate("/admin")
-        }
-      }
-    } catch (error) {
-      console.log('Login Failed')
+    if (email == 'admin' && password == '123'){
+      navigate("/admin")
+    }
+    else if (email == 'user' && password == '123'){
+      navigate("/user")
     }
   };
 
