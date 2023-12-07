@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/SSPS-frontend/static/css/main.d841fe53.css",
-    "main.js": "/SSPS-frontend/static/js/main.a96316a3.js",
+    "main.css": "/SSPS-frontend/static/css/main.e2e7423c.css",
+    "main.js": "/SSPS-frontend/static/js/main.45ffc5eb.js",
     "static/media/docimage2.jpg": "/SSPS-frontend/static/media/docimage2.02c69d8beabfe132092d.jpg",
     "static/media/docimage3.jpg": "/SSPS-frontend/static/media/docimage3.9170b0d39f3c227d0cfc.jpg",
     "static/media/docimage4.jpg": "/SSPS-frontend/static/media/docimage4.da5232bf3f03c50f6eef.jpg",
     "static/media/log.png": "/SSPS-frontend/static/media/log.261e260f483263166cf5.png",
+    "static/media/ava1.jpg": "/SSPS-frontend/static/media/ava1.3cd0f9c5a8698e9451bf.jpg",
     "static/media/docimage5.jpg": "/SSPS-frontend/static/media/docimage5.99d46eccea851e9eff21.jpg",
     "static/media/docimage1.jpg": "/SSPS-frontend/static/media/docimage1.ef588f760856b62f398e.jpg",
     "static/media/logo.png": "/SSPS-frontend/static/media/logo.6469f156b87c3e615346.png",
     "static/media/printicon.svg": "/SSPS-frontend/static/media/printicon.4ca0882bf47526d887c0f8ffd8c84eeb.svg",
     "index.html": "/SSPS-frontend/index.html",
-    "main.d841fe53.css.map": "/SSPS-frontend/static/css/main.d841fe53.css.map",
-    "main.a96316a3.js.map": "/SSPS-frontend/static/js/main.a96316a3.js.map"
+    "main.e2e7423c.css.map": "/SSPS-frontend/static/css/main.e2e7423c.css.map",
+    "main.45ffc5eb.js.map": "/SSPS-frontend/static/js/main.45ffc5eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.d841fe53.css",
-    "static/js/main.a96316a3.js"
+    "static/css/main.e2e7423c.css",
+    "static/js/main.45ffc5eb.js"
   ]
 }
