@@ -30,23 +30,23 @@ function App() {
   return (
     <React.StrictMode>
         <Routes>
-          <Route path="/" element={<Login />}></Route>
-          <Route path="/user" element={<AuthLayout menu={initMenus}/>}>
-            <Route path="/user/" element={<Profile />}></Route>
-            <Route path="/user/printService" element={<PrService />}></Route>
-            <Route path="/user/selectPrinter" element={<PrinterSelect />}></Route>
-            <Route path="/user/printQueue" element={<PrQueue />}></Route>
-            <Route path="/user/printHistory" element={<PrLog />}></Route>
-            <Route path="/user/bank" element={<Bank />}></Route>
-            <Route path="/user/info" element={<Form />}></Route>
-            <Route path="/user/noPaper" element={<NoPaper/>}></Route>
+          <Route path="/SSPS-frontend" element={<Login />}></Route>
+          <Route path="/SSPS-frontend/user" element={<AuthLayout menu={initMenus}/>}>
+            <Route path="/SSPS-frontend/user/" element={<Profile />}></Route>
+            <Route path="/SSPS-frontend/user/printService" element={<PrService />}></Route>
+            <Route path="/SSPS-frontend/user/selectPrinter" element={<PrinterSelect />}></Route>
+            <Route path="/SSPS-frontend/user/printQueue" element={<PrQueue />}></Route>
+            <Route path="/SSPS-frontend/user/printHistory" element={<PrLog />}></Route>
+            <Route path="/SSPS-frontend/user/bank" element={<Bank />}></Route>
+            <Route path="/SSPS-frontend/user/info" element={<Form />}></Route>
+            <Route path="/SSPS-frontend/user/noPaper" element={<NoPaper/>}></Route>
           </Route>
-          <Route path="/admin" element={<AuthLayout  menu={initadMenu}/>}>
-            <Route path="/admin/" element={<AdProfile />}></Route>
-            <Route path="/admin/accManage" element={<AccManage />}></Route>
-            <Route path="/admin/adLog" element={<AdLog />}></Route>
-            <Route path="/admin/perFileManage" element={<PerFileManage />}></Route>
-            <Route path="/admin/prManage" element={<PrManage />}></Route>
+          <Route path="/SSPS-frontend/admin" element={<AuthLayout  menu={initadMenu}/>}>
+            <Route path="/SSPS-frontend/admin/" element={<AdProfile />}></Route>
+            <Route path="/SSPS-frontend/admin/accManage" element={<AccManage />}></Route>
+            <Route path="/SSPS-frontend/admin/adLog" element={<AdLog />}></Route>
+            <Route path="/SSPS-frontend/admin/perFileManage" element={<PerFileManage />}></Route>
+            <Route path="/SSPS-frontend/admin/prManage" element={<PrManage />}></Route>
           </Route>
         </Routes>
     </React.StrictMode>
