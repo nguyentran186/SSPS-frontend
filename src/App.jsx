@@ -30,7 +30,7 @@ function App() {
   return (
     <React.StrictMode>
       <Routes>
-        <Route path="/" element={<Login />}></Route>
+        <Route path="/SSPS-frontend" element={<Login />}></Route>
         {/* <Route path="/user" element={<AuthLayout menu={initMenus} />}>
           <Route path="/user/" element={<Profile />}></Route>
         </Route>
