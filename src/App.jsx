@@ -19,6 +19,7 @@ import AdProfile from "./pages/admin/adProfile";
 import AdLog from "./pages/admin/adLog";
 import PerFileManage from "./pages/admin/perFileManage";
 import PrManage from "./pages/admin/prManage";
+import NoPaper from "./pages/user/NoPaper"
 
 import initMenus from "./data/menus";
 import initadMenu from "./data/admenus";
@@ -39,6 +40,7 @@ function App() {
             <Route path="/user/printHistory" element={<PrLog />}></Route>
             <Route path="/user/bank" element={<Bank />}></Route>
             <Route path="/user/info" element={<Form />}></Route>
+            <Route path="/user/noPaper" element={<NoPaper/>}></Route>
           </Route>
           <Route path="/admin" element={<AuthLayout  menu={initadMenu}/>}>
             <Route path="/admin/" element={<AdProfile />}></Route>

@@ -222,7 +222,7 @@ function Print_service({ ...props }) {
                   Thêm tệp
                 </button>
                 <Link
-                  to="/user/selectPrinter"
+                  to="/user/noPaper"
                   className="md:col-start-5 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12 flex justify-center items-center"
                 >
                   Tiếp tục
