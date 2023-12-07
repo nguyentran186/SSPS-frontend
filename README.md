@@ -26,19 +26,22 @@ HCMUT-SSPS provides the following features:
 
 To install and set up the HCMUT-SSPS, follow these steps:
 
-1. Clone the repository from GitHub:
 ```bash
 git clone https://github.com/yourusername/SSPS-frontend.git
 ```
-2. Install the required dependencies:
+
 ```bash
 npm install
 ```
-3. Start the server:
+
+```bash
+npm run build
+```
+
 ```bash
 npm start
 ```
-4. Open a web browser and navigate to http://localhost:3000 to access the HCMUT-SSPS.
+Open your web browser and navigate to http://localhost:3000 to access the HCMUT-SSPS.
 
 
     
