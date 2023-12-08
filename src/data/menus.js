@@ -9,7 +9,7 @@ import {
 const initMenu = [
   {
     label: "Trang của tôi",
-    path: "/user/",
+    path: "/user",
     icon: faHouseUser,
   },
   {
@@ -17,12 +17,12 @@ const initMenu = [
   },
   {
     label: "In tập tin",
-    path: "/user/printService",
+    path: "/printService",
     icon: faPrint,
   },
   {
     label: "Lịch sử in",
-    path: "/user/printHistory",
+    path: "/printHistory",
     icon: faClockFour,
   },
   
@@ -31,12 +31,12 @@ const initMenu = [
   },
   {
     label: "Liên kết ngân hàng",
-    path: "/user/bank",
+    path: "/bank",
     icon: faCreditCard,
   },
   {
     label: "Chỉnh sửa thông tin",
-    path: "/user/info",
+    path: "/info",
     icon: faInfo,
   },
 ];
