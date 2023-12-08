@@ -30,9 +30,9 @@ function App() {
   return (
     <React.StrictMode>
       <Routes>
-        <Route path="/" element={<Login />}></Route>
-        <Route path="/user" element={<AuthLayout menu={initMenus} />}>
-          <Route path="/user/" element={<Profile />}></Route>
+        <Route path="/SSPS-frontend" element={<Login />}></Route>
+        <Route path="/SSPS-frontend/user" element={<AuthLayout menu={initMenus} />}>
+          <Route path="/SSPS-frontend/user/" element={<Profile />}></Route>
         </Route>
         <Route path="/printService" element={<AuthLayout menu={initMenus} />}>
           <Route path="/printService/" element={<PrService />}></Route>
@@ -56,8 +56,8 @@ function App() {
           <Route path="/noPaper/" element={<NoPaper />}></Route>
         </Route>
 
-        <Route path="/admin" element={<AuthLayout menu={initadMenu} />}>
-          <Route path="/admin/" element={<AdProfile />}></Route>
+        <Route path="/SSPS-frontend/admin" element={<AuthLayout menu={initadMenu} />}>
+          <Route path="/SSPS-frontend/admin/" element={<AdProfile />}></Route>
         </Route>
         <Route path="/accManage" element={<AuthLayout menu={initMenus} />}>
           <Route path="/accManage/" element={<AccManage />}></Route>
