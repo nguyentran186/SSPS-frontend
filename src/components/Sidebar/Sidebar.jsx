@@ -26,7 +26,7 @@ function Sidebar({ ...props }) {
   };
 
   const logout = () => {
-    navigate("/");
+    navigate("/SSPS-frontend");
   };
 
   return (

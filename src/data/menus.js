@@ -9,7 +9,7 @@ import {
 const initMenu = [
   {
     label: "Trang của tôi",
-    path: "/SSPS-frontend/user/",
+    path: "/user",
     icon: faHouseUser,
   },
   {

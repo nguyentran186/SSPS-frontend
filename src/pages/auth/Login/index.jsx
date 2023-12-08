@@ -23,10 +23,10 @@ function LoginIndex() {
     e.preventDefault();
     const { email, password } = data
     if (email == 'user' && password == '123'){
-      navigate("./user")
+      navigate("/user")
     }
     else if (email == 'admin' && password == '123'){
-      navigate("./admin")
+      navigate("/admin")
     }
   };
 
