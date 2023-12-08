@@ -42,7 +42,7 @@ function Printer_select({ ...props }) {
 										IndicatorSeparator: () => null
 									}} />
 								<div className="pt-7 col-start-3 flex flex-col overflow-hidden items-end">
-									<Link to="/user/printQueue" className="bg-emerald-400 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded">
+									<Link to="/printQueue" className="bg-emerald-400 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded">
 										In ngay
 									</Link>
 								</div>
