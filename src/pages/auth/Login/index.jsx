@@ -66,7 +66,7 @@ function LoginIndex() {
               </div>
 
               <div className="md:hidden block my-4">
-                <h1 className="text-2xl font-semibold">Login</h1>
+                <h1 className="text-2xl font-semibold">Đăng nhập</h1>
               </div>
 
               {/* Login Form */}
