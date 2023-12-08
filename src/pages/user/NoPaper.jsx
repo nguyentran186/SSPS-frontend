@@ -28,7 +28,7 @@ function No_paper({ ...props }) {
                     <AchievementWidget />
                     </div>
                     <Link
-                    to="/user/printService"
+                    to="/printService"
                     className="md:col-start-4 md:col-span-1 md:row-start-3 bg-emerald-400 hover:bg-emerald-600 text-white font-bold rounded h-12 flex justify-center items-center"
                     >
                     Quay lại
