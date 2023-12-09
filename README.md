@@ -47,3 +47,6 @@ npm start
 ```
 Open your web browser and navigate to http://localhost:3000 to access the HCMUT-SSPS.
 
+To log in as a student/lecturer, please log in with the username: user
+To log in as a SPSO, please log in with the username: admin
+Password for these accounts is: 123
