@@ -10,7 +10,7 @@ With a system of printers located in different areas around the school, students
 - [Introduction](#introduction)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
+
 ## Features
 HCMUT-SSPS provides the following features:
 
